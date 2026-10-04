@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Matkalomake.css">
+    <title>Niilon matkalomake</title>
+</head>
+<body>
+<h1>Matkalomake</h1><br>
+<p>Kirjaudu sisään</p>
+<form id="Matkalomake" method="get">
+<label for="Käyttäjätunnus">Käyttäjätunnus:</label><br>
+<input type="text" name="text" id="Käyttäjätunnus" required><br>
+<label for="Salasana">Salasana:</label><br>
+<input type="text" name="text" id="Salasana" required><br>
+<button type="button">Kirjaudu</button><br><br>
+<p>Anna yhteystiedot</p>
+<label for="Sähköposti">Sähköposti:</label><br>
+<input type="email" name="email" id="Sähköposti" required><br>
+<label for="Puhelin">Puhelin:</label><br>
+<input type="tel" name="tel" id="Puhelin" required><br>
+<p>Matkan tiedot</p>
+<input type="radio" id="mies" name="sukupuoli" value="Sukupuoli">
+<label for="mies">Mies</label><br>
+<input type="radio" id="nainen" name="sukupuoli" value="Sukupuoli">
+<label for="nainen">Nainen</label><br>
+<input type="radio" id="muu" name="sukupuoli" value="Sukupuoli">
+<label for="muu">Muu</label><br>
+<label for="Matkakohde">Valitse matkakohde:</label><br>
+<input type="text" name="text" id="Matkakohde" required><br>
+<p>Otatko mukaan:</p>
+<label>
+<input type="radio" name="Mukaanotto" value="Mukaanotto"> Golfmailat
+</label>    
+<label>
+<input type="radio" name="Mukaanotto" value="Mukaanotto"> Sukset
+</label><br><br>
+<label for="Henget">Montako henkeä seurueessa on</label><br>
+<input type="number" name="Henget" id="Henget" required><br>
+<label for="Lähtöpäivä">Lähtöpäivä</label><br>
+<input type="date" name="date" id="Lähtöpäivä"><br>
+<label for="Matkatavaroidenpaino">Matkatavaroiden paino kg:</label><br>
+<input type="range" id="Matkatavaroidenpaino" name="Matkatavaroidenpaino" min="0" step="1" oninput="weightValue.value = this.value">
+<output id="weightValue">25</output>kg<br>
+<p>Muita tietoja</p>
+<label for="Lempiväri">Valitse lempiväri:</label><br>
+<input type="color" id="Lempiväri" name="Lempiväri"><br>
+<label for="Viesti"></label><br>
+<textarea id="Viesti" name="Viesti" placeholder="Tähän voit kirjoittaa viestin" rows="4" cols="50"></textarea><br>
+
+<input type="submit" value="Lähetä lomake">
+</form>
+<div class="Harmaa">
+
+</div>
+</body>
+</html>
